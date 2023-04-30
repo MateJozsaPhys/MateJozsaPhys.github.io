@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const gridSize = 10;
+  const gridSize = 50;
   const gridS = 20;
   const bunnyGrid = document.getElementById("bunny-grid");
   const grid = document.getElementById("grid")
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     grid.appendChild(cell);
   }
 
-  for (let i = 0; i < gridSize*gridSize; i++) {
+  for (let i = 0; i < gridSize; i++) {
     let bunnyCell = document.createElement("div");
     bunnyCell.classList.add("no-bunny-cell");
     bunnyGrid.appendChild(bunnyCell);
@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", function() {
   setInterval(function() {
     if (r >= 2.4 && r <= 4.0 && db == 0) {
       x = r * x * (1 - x);
-      roundX = Math.round(x * (gridSize*gridSize));
-      for (let i = 0; i< gridSize*gridSize; i++){
+      roundX = Math.round(x * (gridSize));
+      for (let i = 0; i< gridSize; i++){
         if (typeof bunnyGrid.childNodes[i].classList === 'object'){
           bunnyGrid.childNodes[i].classList.remove("bunny-cell");
         }
