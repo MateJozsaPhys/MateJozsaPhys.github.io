@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
       cellToHighlight = grid.childNodes[cellIndex];
       cellToHighlight.classList.add("highlighted");
       yearContainer.innerHTML = `${time+1}. év`;
-      if (time < 19){
+      if (time < 29){
         time = time + 1;
       } else {
         db = 1;
