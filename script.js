@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const gridSize = 50;
-  const gridS = 20;
+  const gridS = 30;
   const bunnyGrid = document.getElementById("bunny-grid");
   const grid = document.getElementById("grid")
   const yScaleGrid = document.getElementById("y-scale-grid");
