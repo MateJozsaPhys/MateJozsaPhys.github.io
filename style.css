@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   height: 0;
-  padding-bottom: 10%;
+  padding-bottom: 30%;
   margin-top: 3%;
   margin-bottom: 3%;
   position: relative;
@@ -67,7 +67,7 @@
   text-align: center;
   font-weight: bold;
   color: red;
-  font-size: 36px; /* adjust to your preference */
+  font-size: 24px; /* adjust to your preference */
 }
 
 #y-scale-grid {
