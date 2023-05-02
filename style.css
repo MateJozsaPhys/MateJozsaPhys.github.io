@@ -32,7 +32,7 @@
 
 #bunny-grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(15, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 1px;
   width: 100%;
@@ -40,8 +40,6 @@
 
 .bunny-cell {
   display: inline-block;
-  width: 100%;
-  padding-top: 100%;
   background-image: url(img/bunny.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,26 +65,26 @@
   text-align: center;
   font-weight: bold;
   color: red;
-  font-size: 24px; /* adjust to your preference */
+  font-size: 5vh;
 }
 
-#y-scale-grid {
-  flex-basis: 20%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-  grid-gap: 1px;
-  width: 100%;
+#y-scale {
+  flex-basis: 25%;
+  height: 40vh;
+  background-image: url("img/y-scale.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #grid {
-  flex-basis: 80%;
+  flex-basis: 75%;
   display: grid;
   grid-template-columns: repeat(30, 1fr);
   grid-template-rows: repeat(30, 1fr);
   grid-gap: 1px;
-  margin-left: 20%;
-  width: 80%;
+  margin-left: 25%;
+  width: 75%;
   height: 100%;
   background-color: #eee;
   position: absolute;
@@ -98,4 +96,20 @@
 
 .highlighted {
   background-color: red;
+}
+
+.separator {
+  width: 100%;
+  height: 0.5vh;
+  background-color: black;
+}
+
+#x-scale {
+  height: 7vh;
+  margin-left: 25%;
+  width: 75%;
+  background-image: url("img/x-scale.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }

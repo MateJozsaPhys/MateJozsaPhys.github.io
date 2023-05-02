@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const gridSize = 50;
+  const gridSize = 75;
   const gridS = 30;
   const bunnyGrid = document.getElementById("bunny-grid");
-  const grid = document.getElementById("grid")
-  const yScaleGrid = document.getElementById("y-scale-grid");
+  const grid = document.getElementById("grid");
   const slider = document.getElementById("mySlider");
   const yearContainer = document.getElementById("years");
   let r = parseFloat(slider.value);
@@ -23,17 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let bunnyCell = document.createElement("div");
     bunnyCell.classList.add("no-bunny-cell");
     bunnyGrid.appendChild(bunnyCell);
-  }
-
-  for (let i = 0; i < 3*16; i++) {
-    let bunnyCell = document.createElement("div");
-    if ( (i < 9) || (i >= 18 && i < 24) || (i > 32 && i <= 35) || (i > 45 && i <= 46)){
-      bunnyCell.classList.add("bunny-cell");
-    } else{
-      bunnyCell.classList.add("no-bunny-cell");
-    }
-    
-    yScaleGrid.appendChild(bunnyCell);
   }
 
   slider.addEventListener("input", function() {
@@ -71,6 +59,6 @@ document.addEventListener("DOMContentLoaded", function() {
         db = 1;
       }
     }
-  }, 300);
+  }, 1000);
  
 });
