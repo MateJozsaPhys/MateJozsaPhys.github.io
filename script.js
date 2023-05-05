@@ -4,8 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
   const bunnyGrid = document.getElementById("bunny-grid");
   const grid = document.getElementById("grid");
   const slider = document.getElementById("mySlider");
+  const minValue = parseFloat(slider.min);
+  const maxValue = parseFloat(slider.max);
   const yearContainer = document.getElementById("years");
   let r = parseFloat(slider.value);
+  let dbclicked = 0;
   let db = 0;
   let x = 0.01;
   let time = 0;
@@ -24,18 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
     bunnyGrid.appendChild(bunnyCell);
   }
 
-  slider.addEventListener("input", function() {
-    r = parseFloat(slider.value);
-    time = 0;
-    db = 0;
-    x = 0.01;
-    for (let i = 0; i < gridS*gridS; i++){
-      grid.childNodes[i].classList.remove("highlighted");
-    }
-  });
+  slider.addEventListener("input", clearRabbitField);
 
   setInterval(function() {
-    if (r >= 2.4 && r <= 4.0 && db == 0) {
+    if (r >= minValue && r <= maxValue && db == 0) {
       x = r * x * (1 - x);
       roundX = Math.round(x * (gridSize));
       for (let i = 0; i< gridSize+1; i++){
@@ -60,5 +55,16 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   }, 1000);
+
+
+function clearRabbitField() {
+    r = parseFloat(slider.value);
+    time = 0;
+    db = 0;
+    x = 0.01;
+    for (let i = 0; i < gridS*gridS; i++){
+      grid.childNodes[i].classList.remove("highlighted");
+    }
+  };
  
 });
