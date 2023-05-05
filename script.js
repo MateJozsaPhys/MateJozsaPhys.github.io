@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         db = 1;
       }
     }
-  }, 1000);
+  }, 200);
 
 
 function clearRabbitField() {
