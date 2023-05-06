@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       cellIndex = time + roundX2 * gridS;
       cellToHighlight = grid.childNodes[cellIndex];
       cellToHighlight.classList.add("highlighted");
-      yearContainer.innerHTML = `${time+1}. év`;
+      yearContainer.innerHTML = `${time+1}. an`;
       if (time < 29){
         time = time + 1;
       } else {

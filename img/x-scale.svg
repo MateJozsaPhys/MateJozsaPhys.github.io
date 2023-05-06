@@ -25,11 +25,11 @@
      showgrid="false"
      inkscape:zoom="0.54787458"
      inkscape:cx="326.71711"
-     inkscape:cy="415.24102"
+     inkscape:cy="414.3284"
      inkscape:window-width="1312"
-     inkscape:window-height="817"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:window-height="814"
+     inkscape:window-x="102"
+     inkscape:window-y="26"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -109,7 +109,7 @@
          id="tspan1791"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.7px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ff0000;stroke-width:0.264583"
          x="-0.96585262"
-         y="24.480265">1.év</tspan></text>
+         y="24.480265">1.an</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12.7px;line-height:1.25;font-family:sans-serif;fill:#ff0000;stroke-width:0.264583"
@@ -120,6 +120,6 @@
          id="tspan1791-9"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.7px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ff0000;stroke-width:0.264583"
          x="119.33521"
-         y="24.480265">30.év</tspan></text>
+         y="24.480265">30.an</tspan></text>
   </g>
 </svg>
